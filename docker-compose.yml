@@ -12,7 +12,7 @@ services:
       - django_app
     networks:
       - notes-app-nw
-
+#ffff
   django_app:
     image: "edict9548/notes:latest"
     ports:
