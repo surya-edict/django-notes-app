@@ -14,7 +14,7 @@ services:
       - notes-app-nw
 
   django_app:
-    image: edict9548/notes:latest
+    image: "edict9548/notes:latest"
     ports:
       - "8000:8000"
     command: sh -c "python manage.py migrate --noinput && gunicorn notesapp.wsgi --bind 0.0.0.0:8000"
